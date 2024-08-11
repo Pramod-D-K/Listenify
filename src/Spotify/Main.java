@@ -27,7 +27,8 @@ public class Main {
         System.out.println("\"Wellcome to Listenify\"");
 
         int cursongindex =0;
-        System.out.println("Now Playing"+playlist.get(cursongindex).toString());
+        System.out.println("Now Playing "+playlist.get(cursongindex).toString());
+        printMenu();
         startPlaylist(playlist);
 
     }
@@ -56,6 +57,7 @@ public class Main {
                     break;
                 case 4:
                     Collections.shuffle(playlist);
+                    System.out.println("Now Playing "+playlist.get(0).toString());
                     break;
                 case 5:
                     int curtemp =0;
@@ -74,6 +76,8 @@ public class Main {
                     printMenu();
                     break;
                 case 7:
+                    printplaylist(playlist);
+                case 8:
                     quiteApplication=true;
                     System.out.println("\"Thank You\"");
                     System.out.println("\"Exited\"");
@@ -85,7 +89,7 @@ public class Main {
     }
     public static void printplaylist(List<Songs>playlist){
         for (Songs song:playlist){
-            System.out.println(song);
+            System.out.println(song.toString());
         }
     }
     public static  void printMenu(){
@@ -95,6 +99,7 @@ public class Main {
         System.out.println("4. Shuffle the Song");
         System.out.println("5. Delete Current Song");
         System.out.println("6. Print the Menu");
-        System.out.println("7. Exit the Application");
+        System.out.println("7. Print PlayList");
+        System.out.println("8. Exit the Application");
     }
 }
