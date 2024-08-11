@@ -37,6 +37,7 @@ public class Albumbs {
             Songs Song =songlist.get(index);
             for (Songs Songinplaylist:playlist){
                 if(!Songinplaylist.getSongname().equals(Song)){
+
                         playlist.add(Song);
                         System.out.println(Song+" get added to playlist");
                         return;
