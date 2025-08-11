@@ -63,7 +63,7 @@ public class Main {
                 return;
             case 7:
                 for (Songs song: list){
-                    System.out.println(song.getSongName());
+                    System.out.println(song.toString());
                 }
                 return;
             case 8:
@@ -103,6 +103,7 @@ public class Main {
 
 
     }
+
     public static void toShuffle(List<Songs>list){
         Collections.shuffle(list);
         System.out.println("Shuffled the current playList");

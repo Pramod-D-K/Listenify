@@ -21,4 +21,7 @@ public class Songs {
     public double getSongDuration() {
         return songDuration;
     }
+    public String toString(){
+        return "Song { " + "\"song title\" --->"+ songName+ "    \"song duration  \"---->" + songDuration+"}";
+    }
 }
