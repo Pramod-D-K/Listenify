@@ -1,25 +1,24 @@
 package Spotify;
 
 public class Songs {
+    private String songName;
+    private double songDuration;
 
-    private String songname;
-    private double duration;
+    public Songs(String songName, double songDuration) {
+        this.songName = songName;
+        this.songDuration = songDuration;
 
-    public String toString() {
-        return "Songs{" +
-                "songname='" + songname + '\'' +
-                ", duration=" + duration +
-                '}';
     }
 
-    public Songs(String songname, double duration) {
-        this.songname = songname;
-        this.duration = duration;
+    public String getSongName() {
+        return songName;
     }
-    public double getDuration() {
-        return duration;
+
+    public void setSongName(String songName) {
+        this.songName = songName;
     }
-    public String getSongname() {
-        return songname;
+
+    public double getSongDuration() {
+        return songDuration;
     }
 }
