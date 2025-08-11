@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Spotify.iml" filepath="$PROJECT_DIR$/Spotify.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Listenify.iml" filepath="$PROJECT_DIR$/Listenify.iml" />
     </modules>
   </component>
 </project>
