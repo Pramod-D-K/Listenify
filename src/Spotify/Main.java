@@ -23,6 +23,9 @@ public class Main {
         System.out.println("Enter the number  ");
         int n = sc.nextInt();
         switchcases(n,list);
+        if(n>=7){
+            return;
+        }
         show(list);
     }
     public static void switchcases(int n, List<Songs>list){
@@ -56,8 +59,17 @@ public class Main {
                 System.out.println("Current Playing song is "+ list.get(curIndex).getSongName());
                 return;
             case 6:
-                show(list);
+                display();
                 return;
+            case 7:
+                for (Songs song: list){
+                    System.out.println(song.getSongName());
+                }
+                return;
+            case 8:
+                System.out.println("Thank you");
+                return;
+
             default:
                 System.out.println("Wrong Number");
                 return;
@@ -83,9 +95,7 @@ public class Main {
         pramod.addToPlayList("Googly", myList);
         vijay.addToPlayList(1, myList);
 
-        for (Songs song: myList){
-            System.out.println(song.getSongName());
-        }
+
         System.out.println("Current Playing Song  "+ myList.get(0).getSongName());
         show(myList);
 
